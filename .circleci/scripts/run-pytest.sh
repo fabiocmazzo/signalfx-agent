@@ -25,7 +25,7 @@ else
 fi
 
 PYTEST_PATH="pytest"
-if [ $WITH_SUDO -eq 1 ]; then
+if [ "$WITH_SUDO" = "true" ]; then
     PYTEST_PATH="sudo -E $PYENV_ROOT/shims/pytest"
 fi
 FIRSTRUN_OPTIONS="--verbose --junitxml=~/testresults/results.xml --html=~/testresults/results.html --self-contained-html"
