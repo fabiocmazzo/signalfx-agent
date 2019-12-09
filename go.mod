@@ -50,7 +50,7 @@ require (
 	github.com/go-stomp/stomp v2.0.2+incompatible // indirect
 	github.com/gobwas/glob v0.2.4-0.20181002190808-e7a84e9525fe
 	github.com/gocql/gocql v0.0.0-20190301043612-f6df8288f9b4 // indirect
-	github.com/gogo/protobuf v1.2.2-0.20190316100346-88dda4156dab
+	github.com/gogo/protobuf v1.3.1
 	github.com/google/cadvisor v0.26.1
 	github.com/google/gofuzz v0.0.0-20170612174753-24818f796faf // indirect
 	github.com/googleapis/gnostic v0.1.0 // indirect
@@ -88,7 +88,6 @@ require (
 	github.com/influxdata/telegraf v0.10.2-0.20190319005412-5e88824c153e
 	github.com/influxdata/toml v0.0.0-20180607005434-2a2e3012f7cf // indirect
 	github.com/influxdata/wlog v0.0.0-20160411224016-7c63b0a71ef8 // indirect
-	github.com/jaegertracing/jaeger v1.7.0 // indirect
 	github.com/jeffchao/backoff v0.0.0-20140404060208-9d7fd7aa17f2 // indirect
 	github.com/jefferai/jsonx v1.0.0 // indirect
 	github.com/json-iterator/go v0.0.0-20180612202835-f2b4162afba3 // indirect
@@ -129,7 +128,7 @@ require (
 	github.com/prometheus/common v0.2.1-0.20190321124555-1ab4d74fc899
 	github.com/samuel/go-zookeeper v0.0.0-20180130194729-c4fab1ac1bec
 	github.com/shirou/gopsutil v2.18.12+incompatible
-	github.com/signalfx/com_signalfx_metrics_protobuf v0.0.0-20190222193949-1fb69526e884
+	github.com/signalfx/com_signalfx_metrics_protobuf v0.0.0-20190530013331-054be550cb49
 	github.com/signalfx/gateway v1.2.19-0.20191125135538-2c417b7ae0bd
 	github.com/signalfx/golib/v3 v3.0.0
 	github.com/signalfx/signalfx-go v1.6.9-0.20191121015807-da8b1dfaab43
@@ -165,3 +164,11 @@ require (
 	k8s.io/kubernetes v1.12.0
 	layeh.com/radius v0.0.0-20190118135028-0f678f039617 // indirect
 )
+
+replace github.com/signalfx/golib/v3 => ../golib
+
+replace github.com/signalfx/signalfx-go => ../signalfx-go
+
+replace github.com/signalfx/gateway => /home/owais/gohack/github.com/signalfx/gateway
+
+replace github.com/signalfx/sapm-proto => ../sapm-proto
