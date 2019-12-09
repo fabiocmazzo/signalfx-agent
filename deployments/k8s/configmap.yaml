@@ -17,7 +17,7 @@ data:
 
     intervalSeconds: 10
 
-    cluster: MY-CLUSTER
+    cluster: klink
 
     logging:
       level: info
